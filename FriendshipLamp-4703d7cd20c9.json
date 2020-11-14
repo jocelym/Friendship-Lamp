@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "friendshiplamp-294814",
+  "private_key_id": "4703d7cd20c98a3427a61899aeef967f76c5ff37",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVoaOuFSK8VyWR\nP9AZKUPmxSuIu+q3JjK0MxqSZIJIH8VsDk3EiEotJRvMvRVw65VqQSBtbDlup0VJ\nqee3SxGAP85hzAS269DJRQrT4WKK1G6YCFV+95bbp/7Fy52zjkvV5yEuFUs1Q/L4\n++HRhdY5bvfGnVqBgT3d03LWuV/7J9BhL7cfiQWU+sP6iKqtJOarq3WbJbGoMHV0\nG/QW+o3xkMmNwUykGiw9ayKrXNUrFAqCqBWbbeaXu0cMz6bxGvHjZrcZGNd8T1JE\n/mTvqsop0CU05qlwcHDqHIxjwvPLkT4nM2e4Lq6/KOTathoo0ZzeBB6L8k4ooCja\ndY9egllxAgMBAAECggEAHiW75AauirafohJHyy00HF5pyNeABY2Z7S0jDFKrwgLd\nyORx3BDBqwJIHIn4eyF7ye1b5qU1q6RmVkFoZkjtNNSMSufQKII5yhV4tDLjxaS5\n4LGYYx0MiH36Ka6U2DB2Cj8eQxMVNHSc1r8w/HDvLNa4l6pACfOTp/i9hYjOfzI6\npRkBj+91R70egYQ+u012b+Vh1KzyMsQ7mFL+sH83kSbLW/0f7Kx/BFknFrZnSrly\niIDTYkumd/3MSrkZ1jFunASojsEzyFn2yVgKCkGl0R8FN8vAymo46Xsz+yEIMG/9\naYiw5wLZXKvJFy/K7CnbTQv7F2hFOxRFyV/C73NI0wKBgQDuZvGRoyzBU9SH1Frt\njALSl6xYYixUS2rHPw4bm8BgCMuYsCuk944iqjer9N1ppC+V9mlWbu+Q12XotCoz\nE0oRAacPIW2QXY9sEpPNHuk2N70THc1CNnc0vxoM50OMrxmoiphTSio/humIJ55O\n/HorjVQ32lD1lkkY0brUWwai5wKBgQDlZps+hiwnC+U/vmmhvRPp1Ahd7GAaZe+s\n1eMe9I1Qn7LPmn0CGMrhQ13ipD4tgYeYU2hlCziS2fGvNppIMV/5/Ta77WDxEyic\nBPhqYlW0zvBkUboD1g/JCmKwBzPeXz2VtTz/JuZnrSMCqCKERYzr9G9nDMVhuV54\nhc0ISm9t5wKBgQCv4abKyVWVc6FSbGqA4lCayWdO9W666cDnKi/gUnIE57g894vb\ncv+bt3THGinXbFfnDRn9uG5pr1/x5ClV8R8tmMiFMyY/4aaUFsiQBgQMCecmGVB7\nTu93LJ2tc1i0i+IkI8vpdsfggkn8Ny5mG4KOav/9DMW5yZw4AVMSo+0rdQKBgQC2\nJXuc8KI8OrjDnWh4UQ5vurkOArLoIwpknMwi9yEB5FvxdYRO1uq4ZGo2nBz2uwO0\nUn3wxTEdgUniyqNEMVg4wfLk0v4HTSQQhe3NYtkUoL/FmBLwGtcb1VA43u8zYUIg\nDfEp03Rc29+Rq3kEt8jGTabrFvvetXYqkmsTay8A/wKBgD0fYTsCha7jpwiWJWyc\nYHh/T57TGYg9vp1B+QoGCiRQYnWNBfhxgqmbCg/VLXv2GcocrReTthTXMAaUsHUb\nFw0eSDVLv7lQJgUdKpAbhiXaqCxaGWFUOA4lti0HMqY0OisNw9BiieCv2GsSzsVR\nGltS0nA6d9r6JrTk4EL3bWMt\n-----END PRIVATE KEY-----\n",
+  "client_email": "myserviceacct@friendshiplamp-294814.iam.gserviceaccount.com",
+  "client_id": "102767355589013211298",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/myserviceacct%40friendshiplamp-294814.iam.gserviceaccount.com"
+}
