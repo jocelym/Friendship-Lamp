@@ -103,7 +103,7 @@ def changeLightColour(pos):
     elif pos == 7:
         whiteOn()
   
-
+requestTime = 1000000;
 def main():
     GPIO.setwarnings(False)
     whiteOff()
@@ -124,7 +124,7 @@ def main():
             print (counter)
             time.sleep(0.25)
 
-        if (timer == 500000):
+        if (timer == requestTime):
             timer = 0
             print "yes"
             counter = checkLightColour(counter)
