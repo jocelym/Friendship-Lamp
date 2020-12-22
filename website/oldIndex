@@ -20,6 +20,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
@@ -32,10 +33,10 @@
 <!-- body -->
 
 <body class="main-layout">
-    <!-- loader
+    <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div> -->
+    </div>
     <!-- end loader -->
     <!-- header -->
     <header>
@@ -62,61 +63,61 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/red.png" alt="red" onclick="changeColor('1')"/></i>
+                        <i><img src="icon/red.png" alt="red" onclick="changeColor('red')"/></i>
                         <h3>Red</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/orange.png" alt="orange" onclick="changeColor('2')"/></i>
+                        <i><img src="icon/orange.png" alt="orange"/></i>
                         <h3>Orange</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/yellow.png" alt="yellow" onclick="changeColor('3')"/></i>
+                        <i><img src="icon/yellow.png" alt="yellow"/></i>
                         <h3>Yellow</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/green.png" alt="green" onclick="changeColor('4')"/></i>
+                        <i><img src="icon/green.png" alt="green"/></i>
                         <h3>Green</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/cyan.png" alt="cyan" onclick="changeColor('5')" /></i>
+                        <i><img src="icon/cyan.png" alt="cyan"/></i>
                         <h3>Cyan</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/blue.png" alt="blue" onclick="changeColor('6')"/></i>
+                        <i><img src="icon/blue.png" alt="blue"/></i>
                         <h3>Blue</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/purple.png" alt="purple" onclick="changeColor('7')"/></i>
+                        <i><img src="icon/purple.png" alt="purple"/></i>
                         <h3>Purple</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/magenta.png" alt="magenta" onclick="changeColor('8')"/></i>
+                        <i><img src="icon/magenta.png" alt="magenta"/></i>
                         <h3>Magenta</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/pink.png" alt="pink" onclick="changeColor('9')"/></i>
+                        <i><img src="icon/pink.png" alt="pink"/></i>
                         <h3>Pink</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/icon1.png" alt="white" onclick="changeColor('10')"/></i>
+                        <i><img src="icon/icon1.png" alt="white"/></i>
                         <h3>White</h3>
                     </div>
                 </div>
@@ -168,16 +169,28 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
 
-<script src="firebase.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCNJKRu3PRBUgbWmCp_CwYZ4pHZHICjs_U",
+    authDomain: "friendshiplamp-294814.firebaseapp.com",
+    databaseURL: "https://friendshiplamp-294814-default-rtdb.firebaseio.com",
+    projectId: "friendshiplamp-294814",
+    storageBucket: "friendshiplamp-294814.appspot.com",
+    messagingSenderId: "976828148118",
+    appId: "1:976828148118:web:dde0b21a9d2011b18815b7",
+    measurementId: "G-EG6QKQBDMX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
-<!--//FUNCTION TO CHANGE COLOR -->
+//FUNCTION TO CHANGE COLOR
 <script>
 function changeColor(clr) {
-  firebase.database().ref('lampData').set({
-    lampColor: clr
-  })
   console.log("YOOO PRESSED");
 }
 </script>
