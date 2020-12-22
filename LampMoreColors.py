@@ -11,9 +11,13 @@ redPin = 18  #Set to appropriate GPIO
 greenPin = 23 #Should be set in the 
 bluePin = 24  #GPIO.BOARD format
 button = 16#
+onButton = 4
 NUMCOLORS = 10
 
+lampOn = True;
+
 GPIO.setup(button,GPIO.IN)
+GPIO.setup(onButton,GPIO.IN)
 hz = 100
 GPIO.setup(redPin, GPIO.OUT)
 GPIO.setup(greenPin, GPIO.OUT)
@@ -101,7 +105,7 @@ def changeLightColour(pos):
     elif pos == 10:
         whiteOn()
   
-requestTime = 1000000;
+requestTime = 500000;
 def main():
     GPIO.setwarnings(False)
     whiteOff()
@@ -127,6 +131,18 @@ def main():
             timer = 0
             print("yes")
             counter = checkLightColour(counter)
+        
+        if (GPIO.input(onButton) == True):
+            whiteOff()
+            print("light opff")
+            time.sleep(0.5)
+            while (True):
+                if (GPIO.input(onButton) == True):
+                    break
+            time.sleep(0.5)
+            print("light on")
+            changeLightColour(counter)
+                
 
             
 main()
