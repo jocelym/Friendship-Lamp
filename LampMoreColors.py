@@ -99,7 +99,7 @@ def changeLightColour(pos):
     elif pos == 7:
         purpleOn()
     elif pos == 8:
-        magentaOn()##
+        magentaOn()
     elif pos == 9:
         pinkOn()
     elif pos == 10:
