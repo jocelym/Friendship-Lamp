@@ -3,6 +3,8 @@
 import time, sys
 import RPi.GPIO as GPIO
 from updateSheets import *
+from updateFirebase import *
+from firebaseData import *
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setwarnings(False)
@@ -10,7 +12,7 @@ GPIO.setwarnings(False)
 redPin = 18  #Set to appropriate GPIO
 greenPin = 23 #Should be set in the 
 bluePin = 24  #GPIO.BOARD format
-button = 16#
+button = 16
 onButton = 4
 NUMCOLORS = 10
 
@@ -76,7 +78,7 @@ def whiteOff():
     
         
 def checkLightColour(counter):
-     sheetColour = getSheetColour()
+     sheetColour = getFirebaseColour()
      if sheetColour != counter:
         print (":)")
         changeLightColour(int(sheetColour))
@@ -123,7 +125,7 @@ def main():
             if (counter > NUMCOLORS):
                 counter = 1
             changeLightColour(counter)
-            updateSheetColour(counter)
+            updateFirebaseColour(counter)
             print (counter)
             time.sleep(0.5)
 
@@ -142,9 +144,7 @@ def main():
             time.sleep(0.5)
             print("light on")
             changeLightColour(counter)
-                
 
-            
 main()
 
 
